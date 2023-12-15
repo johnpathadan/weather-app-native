@@ -1,0 +1,4 @@
+StyleSheet
+SafeAreaView
+View
+Text
