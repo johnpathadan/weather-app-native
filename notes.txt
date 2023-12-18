@@ -36,3 +36,14 @@ marginTop: StatusBar.currentHeight || 0,
           <Text style={styles.populationText}>8000</Text>
         </View>
       </ImageBackground>
+
+  React navigation - npm install @react-navigation/native
+  npx expo install react-native-screens react-native-safe-area-context
+
+   <NavigationContainer>
+      <View style={styles.container}>
+        <CurrentWeather />
+      </View>
+    </NavigationContainer>
+
+    to install bottom tabs - npm install @react-navigation/bottom-tabs
