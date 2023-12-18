@@ -15,7 +15,24 @@ marginTop: StatusBar.currentHeight || 0,
         ListEmptyComponent={<Empty />}
       />
 
+  const ListItem = (props) => {
+    const { dt_text, min, max, condition } = props
+    const { item, date, temp } = styles
+    }
+
 <ImageBackground
         source={require('../assets/upcoming-background.jpg')}
         style={styles.image}
       />
+
+ <ImageBackground
+        source={require('../assets/city-background.jpg')}
+        style={styles.imageLayout}
+      >
+        <Text style={[styles.cityName, styles.cityText]}>London</Text>
+        <Text style={[styles.countryName, styles.cityText]}>UK</Text>
+        <View style={styles.populationWrapper}>
+          <Feather name={'user'} size={50} color={'red'} />
+          <Text style={styles.populationText}>8000</Text>
+        </View>
+      </ImageBackground>
