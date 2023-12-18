@@ -2,3 +2,20 @@ StyleSheet
 SafeAreaView
 View
 Text
+List - FlatList, SafeList, Virtualized List(not recommended)
+ImageBackground
+marginTop: StatusBar.currentHeight || 0,
+<FlatList
+        data={DATA}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.dt_text}
+        ItemSeparatorComponent={() => (
+          <View style={{ backgroundColor: 'red', height: 2 }} />
+        )}
+        ListEmptyComponent={<Empty />}
+      />
+
+<ImageBackground
+        source={require('../assets/upcoming-background.jpg')}
+        style={styles.image}
+      />
